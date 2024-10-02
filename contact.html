@@ -35,9 +35,9 @@
             <div class="row">
                <div class="col-sm-12">
                   <div class="header_top_main">
-                     <div class="call_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +01-40-114-6855</a></div>
-                     <div class="call_text_2"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> demo@gmail.com</a></div>
-                     <div class="call_text_1"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Mordern Tawon Mosco</a></div>
+                     <div class="call_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +254 704 644 909</a></div>
+                     <div class="call_text_2"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> info@otodrive.co.ke</a></div>
+                     <div class="call_text_1"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Otodrive conversion and fueling center</a></div>
                   </div>
                </div>
             </div>
@@ -48,7 +48,7 @@
       <div class="header_section header_bg">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+               <div class="logo"><a href="index.html"><img src="images/website Logo.png"></a></div>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -83,7 +83,7 @@
                            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                         </ul>
                      </div>
-                     <div class="quote_btn"><a href="#">Get A Quote</a></div>
+                     <div class="quote_btn"><a href="get-quote.html">Get A Quote</a></div>
                   </form>
                </div>
             </nav>
@@ -103,28 +103,35 @@
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-md-6">
-                     <form action="">
+                     <form id="contactForm" action="send_email.php" method="POST">
                         <div class="mail_section_1">
-                           <input type="text" class="mail_text" placeholder="Name" name="Name">
-                           <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number"> 
-                           <input type="text" class="mail_text" placeholder="Email" name="Email">
-                           <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                           <div class="send_bt"><a href="#">SEND</a></div>
+                           <input type="text" class="mail_text" placeholder="Name" name="Name" required>
+                           <input type="text" class="mail_text" placeholder="Phone Number" name="Phone_Number" required>
+                           <input type="email" class="mail_text" placeholder="Email" name="Email" required>
+                           <textarea class="massage-bt" placeholder="Message" rows="5" name="message" required></textarea>
+                           <div class="send_bt">
+                              <button type="submit" class="styled-button">SEND</button>
+                           </div>
                         </div>
                      </form>
+                     <!-- Thank You Message Popup -->
+                     <div id="thankYouMessage" class="thank-you-popup" style="display:none;">
+                        Thank you for your message! We will get back to you shortly.
+                     </div>
                   </div>
                   <div class="col-md-6 padding_left_15">
-                     <div class="contact_img"><img src="images/contact-img.png"></div>
+                     <div class="contact_img"><img src="images/canopy 2.jpg"></div>
                   </div>
                </div>
             </div>
          </div>
          <div class="map_main">
             <div class="map-responsive">
-               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="600" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.304904789087!2d36.9601985!3d-1.4297154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f75004214d2a9%3A0x7831181284a4f334!2sOtoDrive%20Autogas%20fueling%20and%20conversion%20Center%20Mavoko!5e0!3m2!1sen!2ske!4v1727360677995!5m2!1sen!2ske" width="600" height="600" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
             </div>
          </div>
       </div>
+      
       <!-- contact section end -->
       <!-- footer section start -->
       <div class="footer_section layout_padding">
@@ -134,10 +141,10 @@
                   <div class="location_text">
                      <ul>
                         <li>
-                           <a href="#"><span class="padding_15"><i class="fa fa-mobile" aria-hidden="true"></i></span> <br>Call +01 1234567890</a>
+                           <a href="#"><span class="padding_15"><i class="fa fa-mobile" aria-hidden="true"></i></span> <br>Call +254 704 644 909</a>
                         </li>
                         <li class="active">
-                           <a href="#"><span class="padding_15"><i class="fa fa-envelope" aria-hidden="true"></i></span> <br>demo@gmail.com</a>
+                           <a href="#"><span class="padding_15"><i class="fa fa-envelope" aria-hidden="true"></i></span> <br>info@otodrive.co.ke</a>
                         </li>
                         <li>
                            <a href="#"><span class="padding_15"><i class="fa fa-map-marker" aria-hidden="true"></i></span> <br>Location</a>
@@ -199,7 +206,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <p class="copyright_text">2019 All Rights Reserved. Design by <a href="https://html.design" rel="nofollow">HTML.DESIGN</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
+                  <p class="copyright_text">2024 All Rights Reserved. <a href="https://larrzonesolutions.com">OtoDrive </a></p>
                </div>
             </div>
          </div>
@@ -213,3 +220,37 @@
       <script src="js/plugin.js"></script>
    </body>
 </html>
+
+<script>
+   document.getElementById('contactForm').addEventListener('submit', function(event) {
+       event.preventDefault(); // Prevent the default form submission
+   
+       const formData = new FormData(this);
+       
+       // Send the form data using fetch API
+       fetch('send_email.php', {
+           method: 'POST',
+           body: formData
+       })
+       .then(response => response.json())
+       .then(data => {
+           const thankYouMessage = document.getElementById('thankYouMessage');
+           if (data.success) {
+               // Show the thank you message
+               thankYouMessage.style.display = 'block';
+   
+               // Hide the message after 3 seconds
+               setTimeout(() => {
+                   thankYouMessage.style.display = 'none';
+               }, 3000);
+   
+               // Reset the form
+               document.getElementById('contactForm').reset();
+           } else {
+               alert(data.message); // Show an alert for error message
+           }
+       })
+       .catch(error => console.error('Error:', error));
+   });
+   </script>
+   

@@ -51,6 +51,32 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.styled-button {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.thank-you-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border: 1px solid #888;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
 a {
     color: #1f1f1f;
     text-decoration: none !important;
@@ -298,14 +324,31 @@ button {
 
 /* header section start */
 
-.header_section {
+.header_section video {
     width: 100%;
-    float: left;
-    background-image: url(../images/george2.jpg);
-    height: auto;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    height: 500px; /* Set the height to 600px */
+    position: relative;
+    overflow: hidden; /* Ensure no overflow from the video */
 }
+
+.header_section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video stretch the full width */
+    height: 75%; /* Set the height of the video to fill the 600px */
+    object-fit: cover; /* Ensure the video covers the entire area, cropping if necessary */
+    z-index: -1; /* Keep the video behind the content */
+}
+
+.header_section .container-fluid {
+    position: relative;
+    z-index: 1; /* Ensure the content stays above the video */
+}
+
+
+
+
 
 .header_bg {
     background: #1f1f1f;
@@ -328,8 +371,9 @@ button {
     padding-right: 10px;
     padding-left: 10px;
     font-size: 18px;
-    color: #fcfefe;
+    color: #FFE680;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -413,7 +457,7 @@ button {
     width: 100%;
     float: left;
     font-size: 60px;
-    color: #ffffff;
+    color: #0CC37C;
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 0px;
@@ -425,9 +469,10 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: #FFE689;
     margin-left: 0px;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold; /* This makes the text bold */
 }
 
 .btn_main {
@@ -527,7 +572,7 @@ button {
 .about_img {
     width: 100%;
     float: left;
-    background-image: url(../images/about-img.png);
+    background-image: url(../images/123.jpg);
     height: auto;
     background-size: cover;
     padding: 0px 0px 0px 0px;
@@ -540,6 +585,7 @@ button {
 
 .play_icon img {
     width: 80px;
+    cursor: pointer;
 }
 
 .play_icon {
@@ -576,6 +622,7 @@ button {
         transform: translate(-50%, -50%) scale(1.2);
         opacity: 0;
     }
+    
 }
 
 .read_bt_1 {
